@@ -1,0 +1,19 @@
+.navContent {
+    height: 90px;
+    background-color: #112F70;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+span {
+    color: white;
+    width: 200px;
+    font-size: 40px;
+    margin: 3%;
+    position: relative;
+    top: 20%;
+}
+
+span:hover {
+    cursor: pointer;
+}
