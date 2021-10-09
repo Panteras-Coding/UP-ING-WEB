@@ -1,0 +1,514 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.overlay-container .idIcon img {
+  position: absolute;
+  color: #aaa;
+  left: 0;
+  padding: 9px 8px;
+  transition: .3s;
+  top: 8px;
+  width: 15%;
+}
+
+
+
+.mainContainerLogin .container {
+background-color: #fff;
+border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+position: relative;
+overflow: hidden;
+width: 768px;
+max-width: 100%;
+min-height: 480px;
+}
+
+
+.mainContainerLogin .form-container {
+position: absolute;
+top: 0;
+height: 100%;
+transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+left: 0;
+width: 50%;
+z-index: 2;
+}
+
+.overlay-container {
+position: absolute;
+top: 0;
+left: 50%;
+width: 50%;
+height: 100%;
+overflow: hidden;
+transition: transform 0.6s ease-in-out;
+z-index: 100;
+}
+
+.overlay-container img{
+width: 120px;
+  margin-bottom: 30px;
+}
+
+.mainContainerLogin  .overlay {
+background: #851313;
+color: #FFFFFF;
+position: relative;
+left: -100%;
+height: 100%;
+width: 200%;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: left;
+top: 0;
+height: 100%;
+width: 50%;
+transform: translateX(0);
+transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+transform: translateX(-20%);
+}
+
+.overlay-right {
+right: 0;
+transform: translateX(0);
+}
+
+.overlay-right sup {
+font-size: small;
+  font-weight: normal;
+}
+
+.overlay-right img{
+width: 150px;
+}
+.sign-in-containerReg {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.userProfile{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.profileImgNormal{
+  width: 100px;
+  transition: 250ms;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #ef6d6d;
+}
+.profileImgSmall{
+  width: 60px;
+  transition: 250ms;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #ef6d6d;
+}
+
+.userProfile p{
+  margin: 10px 0;
+  color: #FFD2D2;
+  transition: 250ms;
+  font-size: 0.8em;
+}
+
+.infoBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #6E0000;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 50px 20px;
+  position:relative;
+  top: 35px;
+}
+.infoBox img {
+  height: 50px;
+  width: 50px;
+}
+
+.dataCont{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6em;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.dataCont p{
+  margin: 8px 0;
+  color: white;
+  font-size: 8px;
+}
+
+/*__________Main__________*/
+
+.main{
+  background-color: white;
+  height: 97vh;
+  transition: 250ms;
+}
+
+.complete{
+  margin-left: 100px;
+}
+
+.incomplete{
+  margin-left: 230px;
+}
+
+/*___ User Action/ User Space _____*/
+.userActions {
+  background-color: #FDFDFD !important;
+  color: grey !important;
+  border-radius: 25px;
+  padding: 2rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 2px 5px grey;
+      padding-bottom: 3.2rem;
+      margin-left: -0.8rem;
+      border-color: #ff0 transparent transparent transparent;
+
+} 
+
+.userActions:after {
+      content:"";
+      border-color: white white transparent transparent;
+      border-style:solid;
+      border-width:2rem;
+      width:0;
+      height:0;
+      position:absolute;
+      top:40px;
+      left:-40px
+}
+
+
+.userActions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 25px;
+  white-space:nowrap; 
+
+}
+.userActions li{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  transition: 250ms;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+  color: grey !important;
+  font-size: 0.9em;
+}
+
+.userActions li:hover{
+  cursor: pointer;
+  color: grey !important;
+  transform: scale(1.01);
+  box-shadow: none !important;
+}
+
+.userActions .icon{
+  width: 25px;
+  margin: 0.8rem;
+}
+
+.userActions .header {
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+}
+.userActions .header p{
+  color: grey !important
+}
+
+hr {
+  color: grey
+}
+
+#btnUser {
+  background: none;
+  border: none;
+}
+
+#btnUser:hover{
+  transform: scale(1.015);
+  cursor:pointer
+}
+
+/* _______ Inicio Login _______*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.mainContainerLogin * {
+box-sizing: border-box;
+}
+
+.mainContainerLogin {
+background: #f6f5f7;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: 'Montserrat', sans-serif;
+height: 100vh;
+margin: -20px 0 50px;
+}
+
+.mainContainerLogin h1 {
+font-weight: bold;
+margin: 0;
+}
+
+.mainContainerLogin h2 {
+text-align: center;
+}
+
+.mainContainerLogin p {
+font-size: 14px;
+font-weight: 100;
+line-height: 20px;
+letter-spacing: 0.5px;
+margin: 20px 0 30px;
+}
+
+.mainContainerLogin span {
+font-size: 12px;
+}
+
+.mainContainerLogin a {
+color: #333;
+font-size: 14px;
+text-decoration: none;
+margin: 15px 0;
+}
+
+.mainContainerLogin button {
+border-radius: 15px;
+border: none;
+  margin-top: 15px;
+background-color: #112F70;
+color: #FFFFFF;
+font-size: 12px;
+font-weight: bold;
+padding: 12px 35px;
+letter-spacing: 1px;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+}
+
+.mainContainerLogin button:active {
+transform: scale(0.95);
+}
+
+.mainContainerLogin form {
+background-color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 50px;
+height: 100%;
+text-align: center;
+}
+
+.mainContainerLogin input {
+border: 2px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+padding: 8px;
+margin: 8px 0;
+  outline: none;
+  transition: .3s;
+width: 100%;
+}
+
+.mainContainerLogin input:focus {
+  border-color: #112F70;
+  box-shadow: 0 0 8px 0;
+}
+
+.idIcon input {
+  padding-left: 40px;
+}
+
+.idIcon {
+  position: relative;
+}
+
+.overlay-container .idIcon img {
+  position: absolute;
+  color: #aaa;
+  left: 0;
+  padding: 9px 8px;
+  transition: .3s;
+  top: 8px;
+  width: 15%;
+}
+
+
+
+.mainContainerLogin .container {
+background-color: #fff;
+border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+position: relative;
+overflow: hidden;
+width: 768px;
+max-width: 100%;
+min-height: 480px;
+}
+
+
+.mainContainerLogin .form-container {
+position: absolute;
+top: 0;
+height: 100%;
+transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+left: 0;
+width: 50%;
+z-index: 2;
+}
+
+.overlay-container {
+position: absolute;
+top: 0;
+left: 50%;
+width: 50%;
+height: 100%;
+overflow: hidden;
+transition: transform 0.6s ease-in-out;
+z-index: 100;
+}
+
+.overlay-container img{
+width: 120px;
+  margin-bottom: 30px;
+}
+
+.mainContainerLogin  .overlay {
+background: #112F70;
+color: #FFFFFF;
+position: relative;
+left: -100%;
+height: 100%;
+width: 200%;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: left;
+top: 0;
+height: 100%;
+width: 50%;
+transform: translateX(0);
+transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+transform: translateX(-20%);
+}
+
+.overlay-right {
+right: 0;
+transform: translateX(0);
+}
+
+.overlay-right sup {
+font-size: small;
+  font-weight: normal;
+}
+
+.overlay-right img{
+width: 150px;
+}
+.idIcon input {
+  padding-left: 40px;
+}
+
+.idIcon {
+  position: relative;
+}
+.overlay-container .idIcon img {
+  position: absolute;
+  color: #aaa;
+  left: 0;
+  padding: 9px 8px;
+  transition: .3s;
+  top: 8px;
+  width: 15%;
+}
+.idIconReg {
+  position: relative;
+  width: 100%;
+}
+.idIconReg img {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  width: 30px;
+}  
