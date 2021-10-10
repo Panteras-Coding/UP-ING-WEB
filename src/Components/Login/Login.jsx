@@ -1,6 +1,8 @@
 import React from "react";
 import {Switch} from "react-router-dom";
 import './Login.css';
+const logo = require("../Assets/lock.svg");
+
 function Login(props){
     return (
     <Switch>
@@ -10,23 +12,23 @@ function Login(props){
                 <div className="form-container sign-in-container">
                     <div className="overlay">
                         <div className="overlay-panel overlay-right">
-                            <h1>Bienvenido<sup>[ING]</sup></h1>
+                            <img alt={"idIcon"} src={require("../Assets/escudo_UP.svg").default} />
+                            <h1>Bienvenido</h1>
                             <p>Ingresa tu nombre de usuario y contraseña</p>
-                            <img alt={"Logo Panteras"} src={"src/Components/Assets/logoup.gif"}/>
                         </div>
                     </div>
                 </div>
 
                 <div className="overlay-container">
                     <form action="#">
-                        <img src={("../Assets/businessman.svg")}/>
+                        <h2>Inicia Sesión</h2>
                         <div className="idIcon">
                             <input type="email" placeholder="Usuario"/>
-                            <img alt={"idIcon"} />
+                            <img alt={"idIcon"} src={require("../Assets/usuario-de-perfil.svg").default} />
                         </div>
                         <div className="idIcon">
                             <input type="password" placeholder="Contraseña" />
-                            <img alt={"lockIcon"} src={("../Assets/lock.svg")} />
+                            <img alt={"lockIcon"} src={require("../Assets/lock.svg").default} />
                         </div>
                         <button onClick={props.changeLog}>Login</button>
                     </form>
