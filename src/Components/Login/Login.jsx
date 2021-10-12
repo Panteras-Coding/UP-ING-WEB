@@ -1,11 +1,8 @@
 import React from "react";
-import {Switch} from "react-router-dom";
 import './Login.css';
-const logo = require("../Assets/lock.svg");
 
 function Login(props){
     return (
-    <Switch>
         <div className="mainContainerLogin">
         
             <div className="container" id="container">
@@ -35,7 +32,6 @@ function Login(props){
                 </div>
             </div>
         </div>
-    </Switch>
     );
   }
 

@@ -5,15 +5,9 @@
     border-bottom-right-radius: 20px;
 }
 
-span {
-    color: white;
-    width: 200px;
-    font-size: 40px;
-    margin: 3%;
+.navContent img {
+    margin: 0 4rem;
+    width: 40px;
     position: relative;
-    top: 20%;
-}
-
-span:hover {
-    cursor: pointer;
+    top: 25%;
 }
