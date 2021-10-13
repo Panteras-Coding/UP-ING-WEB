@@ -11,3 +11,33 @@
     position: relative;
     top: 25%;
 }
+
+@media only screen and (max-width: 1008px) {
+    .navContent img {
+        margin: 0 3rem;
+        width: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navContent img {
+        margin: 0 4.5%;
+    }
+}
+
+@media only screen and (max-width: 417px) {
+    .navContent img {
+        margin: 0 4%;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    .navContent img {
+        width: 8%;
+        margin: 0 4%;
+    }
+
+    .navContent {
+        height: 70px;
+    }
+}
