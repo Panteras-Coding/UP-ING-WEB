@@ -18,7 +18,12 @@ function Login(props){
 
                 <div className="overlay-container">
                     <form action="#">
-                        <h2>Inicia Sesión</h2>
+                        <div className="hidden">
+                            <img alt={"idIcon"} src={require("../Assets/escudo_UP2.svg").default} />
+                            <h2>Bienvenido</h2>
+                            <p>Ingresa tu nombre de usuario y contraseña</p>
+                        </div>
+                        <h1>Inicia Sesión</h1>
                         <div className="idIcon">
                             <input type="email" placeholder="Usuario"/>
                             <img alt={"idIcon"} src={require("../Assets/usuario-de-perfil.svg").default} />
