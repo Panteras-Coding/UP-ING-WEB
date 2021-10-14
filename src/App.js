@@ -6,7 +6,7 @@ import Notifications from './Components/Notifications/Notifications';
 import Upload from './Components/Upload/Upload';
 import Calendar from './Components/Calendar/Calendar';
 import Configuration from './Components/Configuration/Configuration';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Login from "./Components/Login/Login";
 import React, {useState} from 'react';
 function App() {
