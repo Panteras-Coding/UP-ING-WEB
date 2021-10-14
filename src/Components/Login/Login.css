@@ -2,7 +2,7 @@
 
 body {
   height: 20px;
-  background: rgb(233, 233, 233);
+  background-color: #FFFFFF;
 }
 
 .mainContainerLogin * {
@@ -10,7 +10,7 @@ box-sizing: border-box;
 }
 
 .mainContainerLogin {
-  background: rgb(233, 233, 233);
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
