@@ -77,7 +77,8 @@
   .container-notif h1{
     text-align: center;
     margin: 0;
-    font-size: 25px;
+    margin-top: 30px;
+    font-size: 30px;
   }
 
   .container-notif button {
