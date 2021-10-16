@@ -1,0 +1,110 @@
+.main-notif {
+  padding-bottom: 50px;
+}
+
+.notif-box {
+  background-color: #FFFFFF;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgb(209, 209, 209);
+}
+
+.notif-box::-webkit-scrollbar {
+  display: none;
+}
+
+.container-notif {
+  padding-top: 10px;
+}
+
+.container-notif h1 {
+  color: #112F70;
+  margin-left: 40px;
+}
+
+.container-notif button {
+  background-color: rgb(224, 147, 3);
+  color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 7px 15px;
+  position: relative;
+  margin-left: 75%;
+}
+
+.notif {
+  background-color: #EAEFF3;
+  font-size: 20px;
+  color: #112F70;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px rgb(209, 209, 209);
+  position: relative;
+}
+
+.notif p {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.notif input {
+  position: absolute;
+  right: 10px;
+  position: absolute;
+  right: 10px;
+  top: 35%;
+}
+
+@media only screen and (max-width: 586px) {
+  .notif-box {
+    width: 90%;
+    padding-bottom: 0;
+  }
+  
+  .container-notif form {
+    height: 100% !important;
+  }
+
+  .container-notif h1{
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .container-notif button {
+    margin: 0;
+    margin-top: 35px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 15px !important;
+  }
+
+  .notif p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .notif-box {
+    padding-bottom: 0;
+  }
+  
+  .container-notif button {
+    margin: 0;
+    margin-top: 35px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+}
