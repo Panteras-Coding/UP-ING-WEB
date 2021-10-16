@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/UP-ING-WEB/static/css/main.9cbb6209.chunk.css",
-    "main.js": "/UP-ING-WEB/static/js/main.044f3b71.chunk.js",
-    "main.js.map": "/UP-ING-WEB/static/js/main.044f3b71.chunk.js.map",
-    "runtime-main.js": "/UP-ING-WEB/static/js/runtime-main.9270356d.js",
-    "runtime-main.js.map": "/UP-ING-WEB/static/js/runtime-main.9270356d.js.map",
-    "static/js/2.c9bd3b77.chunk.js": "/UP-ING-WEB/static/js/2.c9bd3b77.chunk.js",
-    "static/js/2.c9bd3b77.chunk.js.map": "/UP-ING-WEB/static/js/2.c9bd3b77.chunk.js.map",
-    "static/js/3.c2c301a4.chunk.js": "/UP-ING-WEB/static/js/3.c2c301a4.chunk.js",
-    "static/js/3.c2c301a4.chunk.js.map": "/UP-ING-WEB/static/js/3.c2c301a4.chunk.js.map",
+    "main.css": "/UP-ING-WEB/static/css/main.30c32e99.chunk.css",
+    "main.js": "/UP-ING-WEB/static/js/main.6c02afab.chunk.js",
+    "main.js.map": "/UP-ING-WEB/static/js/main.6c02afab.chunk.js.map",
+    "runtime-main.js": "/UP-ING-WEB/static/js/runtime-main.ff356388.js",
+    "runtime-main.js.map": "/UP-ING-WEB/static/js/runtime-main.ff356388.js.map",
+    "static/js/2.5c93ac1b.chunk.js": "/UP-ING-WEB/static/js/2.5c93ac1b.chunk.js",
+    "static/js/2.5c93ac1b.chunk.js.map": "/UP-ING-WEB/static/js/2.5c93ac1b.chunk.js.map",
+    "static/js/3.3b17307a.chunk.js": "/UP-ING-WEB/static/js/3.3b17307a.chunk.js",
+    "static/js/3.3b17307a.chunk.js.map": "/UP-ING-WEB/static/js/3.3b17307a.chunk.js.map",
     "index.html": "/UP-ING-WEB/index.html",
-    "static/css/main.9cbb6209.chunk.css.map": "/UP-ING-WEB/static/css/main.9cbb6209.chunk.css.map",
-    "static/js/2.c9bd3b77.chunk.js.LICENSE.txt": "/UP-ING-WEB/static/js/2.c9bd3b77.chunk.js.LICENSE.txt",
+    "static/css/main.30c32e99.chunk.css.map": "/UP-ING-WEB/static/css/main.30c32e99.chunk.css.map",
+    "static/js/2.5c93ac1b.chunk.js.LICENSE.txt": "/UP-ING-WEB/static/js/2.5c93ac1b.chunk.js.LICENSE.txt",
     "static/media/Calendario_blanco.svg": "/UP-ING-WEB/static/media/Calendario_blanco.44106fe4.svg",
     "static/media/Chat.svg": "/UP-ING-WEB/static/media/Chat.d69ba6cc.svg",
     "static/media/Compartir.svg": "/UP-ING-WEB/static/media/Compartir.59ca8935.svg",
@@ -24,9 +24,9 @@
     "static/media/usuario-de-perfil.svg": "/UP-ING-WEB/static/media/usuario-de-perfil.22464402.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9270356d.js",
-    "static/js/2.c9bd3b77.chunk.js",
-    "static/css/main.9cbb6209.chunk.css",
-    "static/js/main.044f3b71.chunk.js"
+    "static/js/runtime-main.ff356388.js",
+    "static/js/2.5c93ac1b.chunk.js",
+    "static/css/main.30c32e99.chunk.css",
+    "static/js/main.6c02afab.chunk.js"
   ]
 }
