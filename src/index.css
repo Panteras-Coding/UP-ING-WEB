@@ -11,13 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.overlay-container .idIcon img {
-  position: absolute;
-  color: #aaa;
-  left: 0;
-  padding: 9px 8px;
-  transition: .3s;
-  top: 8px;
-  width: 15%;
-}
-

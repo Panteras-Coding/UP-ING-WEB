@@ -1,0 +1,83 @@
+.main {
+    background-color: #EAEFF3;
+    width: 75%;
+    text-align: center;
+    
+    padding-bottom: 92px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ajustes-box{
+    background-color: #FFFFFF;
+    width: 65%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(209, 209, 209);
+}
+
+.container-config {
+    position: relative;
+    padding-top: 20px;
+}
+
+.container-config h1 {
+    color: #112F70;
+    margin-left: 40px;
+}
+
+.btn {
+    background-color: #EAEFF3;
+    font-size: 20px;
+    color: #112F70;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgb(209, 209, 209);
+}
+
+.btn p {
+  padding: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 880px) {
+    .ajustes-box {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 709px) {
+    .ajustes-box {
+        width: 90%;
+    }
+
+    .ajustes-box p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    .ajustes-box {
+        width: 100%;
+    }
+
+    .ajustes-box h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    p {
+        text-align: left;
+    }
+}
