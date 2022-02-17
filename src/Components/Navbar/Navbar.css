@@ -7,6 +7,12 @@
     margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 450px) {
+    .navContent {
+        display: none;
+    }
+}
+
 .navContent img {
     margin: 0 4rem;
     width: 40px;
@@ -42,4 +48,47 @@
     .navContent {
         height: 70px;
     }
+}
+
+@media only screen and (min-width: 450px) {
+    .navBarResponsive {
+        display: none !important;
+    }
+}
+
+
+.navBarResponsive {
+    display: flex;
+    flex-direction: column;
+    background-color: #112F70;
+    text-align: left;
+}
+.navBarResponsive button {
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+.navBarResponsive button img {
+    vertical-align: middle;
+    padding: 0.3rem;
+}
+
+.navBarResponsive .open {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem 0.5rem;
+    overflow-y: scroll;
+}
+.navBarResponsive .open a {
+    text-decoration: none;
+    color: white;
+    margin-top: 0.8rem;
+}
+.navBarResponsive .open a img {
+    width: 1rem;
+    margin-right: 1rem;
+}
+.navBarResponsive .close {
+    display: none;
 }
