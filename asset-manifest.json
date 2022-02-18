@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/UP-ING-WEB/static/css/main.0fcf05d6.chunk.css",
-    "main.js": "/UP-ING-WEB/static/js/main.6c02afab.chunk.js",
-    "main.js.map": "/UP-ING-WEB/static/js/main.6c02afab.chunk.js.map",
+    "main.js": "/UP-ING-WEB/static/js/main.6a9b8c7b.chunk.js",
+    "main.js.map": "/UP-ING-WEB/static/js/main.6a9b8c7b.chunk.js.map",
     "runtime-main.js": "/UP-ING-WEB/static/js/runtime-main.ff356388.js",
     "runtime-main.js.map": "/UP-ING-WEB/static/js/runtime-main.ff356388.js.map",
     "static/js/2.5c93ac1b.chunk.js": "/UP-ING-WEB/static/js/2.5c93ac1b.chunk.js",
@@ -12,14 +12,14 @@
     "index.html": "/UP-ING-WEB/index.html",
     "static/css/main.0fcf05d6.chunk.css.map": "/UP-ING-WEB/static/css/main.0fcf05d6.chunk.css.map",
     "static/js/2.5c93ac1b.chunk.js.LICENSE.txt": "/UP-ING-WEB/static/js/2.5c93ac1b.chunk.js.LICENSE.txt",
-    "static/media/Calendario_blanco.svg": "/UP-ING-WEB/static/media/Calendario_blanco.44106fe4.svg",
-    "static/media/Chat.svg": "/UP-ING-WEB/static/media/Chat.d69ba6cc.svg",
-    "static/media/Compartir.svg": "/UP-ING-WEB/static/media/Compartir.59ca8935.svg",
-    "static/media/Engrane.svg": "/UP-ING-WEB/static/media/Engrane.cb0e18d3.svg",
-    "static/media/Inicio.svg": "/UP-ING-WEB/static/media/Inicio.4250c236.svg",
-    "static/media/Notificaciones.svg": "/UP-ING-WEB/static/media/Notificaciones.b4ea056d.svg",
-    "static/media/escudo_UP.svg": "/UP-ING-WEB/static/media/escudo_UP.81edd6c9.svg",
-    "static/media/escudo_UP2.svg": "/UP-ING-WEB/static/media/escudo_UP2.450bbd6b.svg",
+    "static/media/Calendario_blanco.svg": "/UP-ING-WEB/static/media/Calendario_blanco.a04d1054.svg",
+    "static/media/Chat.svg": "/UP-ING-WEB/static/media/Chat.495bcb33.svg",
+    "static/media/Compartir.svg": "/UP-ING-WEB/static/media/Compartir.aec0bdca.svg",
+    "static/media/Engrane.svg": "/UP-ING-WEB/static/media/Engrane.45aab003.svg",
+    "static/media/Inicio.svg": "/UP-ING-WEB/static/media/Inicio.c9030e50.svg",
+    "static/media/Notificaciones.svg": "/UP-ING-WEB/static/media/Notificaciones.a36977ff.svg",
+    "static/media/escudo_UP.svg": "/UP-ING-WEB/static/media/escudo_UP.aebc387b.svg",
+    "static/media/escudo_UP2.svg": "/UP-ING-WEB/static/media/escudo_UP2.462d3fb5.svg",
     "static/media/lock.svg": "/UP-ING-WEB/static/media/lock.75da9796.svg",
     "static/media/usuario-de-perfil.svg": "/UP-ING-WEB/static/media/usuario-de-perfil.22464402.svg"
   },
@@ -27,6 +27,6 @@
     "static/js/runtime-main.ff356388.js",
     "static/js/2.5c93ac1b.chunk.js",
     "static/css/main.0fcf05d6.chunk.css",
-    "static/js/main.6c02afab.chunk.js"
+    "static/js/main.6a9b8c7b.chunk.js"
   ]
 }
