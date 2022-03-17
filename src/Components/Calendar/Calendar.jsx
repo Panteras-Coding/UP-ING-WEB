@@ -49,6 +49,44 @@ export default function Calendar() {
                             </section>
                             <section className="calendar-section">
                                 <div className="subsection">
+                                    <h4>Período de Exámenes Parcial 1</h4>
+                                </div>
+                            </section>
+                            <section className="calendar-section">
+                                <div className="subsection">
+                                    <p>De</p>
+                                    <select className="styled-select"><option>01</option></select>
+                                    <select className="styled-select"><option>01 </option></select>
+                                    <select className="styled-select"><option>2020</option></select>
+                                </div>
+                                <div className="subsection">
+                                    <p>A</p>
+                                    <select className="styled-select"><option>01</option></select>
+                                    <select className="styled-select"><option>01 </option></select>
+                                    <select className="styled-select"><option>2020</option></select>
+                                </div>
+                            </section>
+                            <section className="calendar-section">
+                                <div className="subsection">
+                                    <h4>Período de Exámenes Parcial 2</h4>
+                                </div>
+                            </section>
+                            <section className="calendar-section">
+                                <div className="subsection">
+                                    <p>De</p>
+                                    <select className="styled-select"><option>01</option></select>
+                                    <select className="styled-select"><option>01 </option></select>
+                                    <select className="styled-select"><option>2020</option></select>
+                                </div>
+                                <div className="subsection">
+                                    <p>A</p>
+                                    <select className="styled-select"><option>01</option></select>
+                                    <select className="styled-select"><option>01 </option></select>
+                                    <select className="styled-select"><option>2020</option></select>
+                                </div>
+                            </section>
+                            <section className="calendar-section">
+                                <div className="subsection">
                                     <h4>Período de exámenes extraordinarios</h4>
                                 </div>
                             </section>
