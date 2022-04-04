@@ -41,7 +41,7 @@ export default function Calendar() {
                         <div className="calendar">
                             <section className="calendar-section">
                                 <div className="subsection">
-                                    <h4>Semestre</h4> <select className="styled-select"><option>Primavera - 1</option></select>
+                                    <h4>Semestre</h4> <input type="text"/>
                                 </div>
                             </section>
                             <section className="calendar-section">
