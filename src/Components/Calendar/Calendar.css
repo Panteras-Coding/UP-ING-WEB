@@ -87,6 +87,11 @@
     justify-content: space-between;
     margin-top: 1rem;
   }
+  .form-asueto {
+    margin-top: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0.5rem;
+  }
 
   .subsection {
     display: inline-flex;
