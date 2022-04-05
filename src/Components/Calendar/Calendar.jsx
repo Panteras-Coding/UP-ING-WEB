@@ -145,6 +145,7 @@ export default function Calendar() {
                                             <select className="styled-select"><option value={fecha.month}>{fecha.month} </option></select>
                                             <select className="styled-select"><option value={fecha.year}>{fecha.year}</option></select>
                                         </div>
+    
                                     )
                                 }
                                 )}
@@ -154,10 +155,10 @@ export default function Calendar() {
                                         <select className="styled-select" onChange={e => { if (year) { setMonth(e.target.value); setDayOptions(daysInMonth(month, year)); setDay(dayOptions[0]+1) } }}>{monthOptions.map((month, index) => <option value={index + 1}>{month} </option>)}</select>
                                         <select className="styled-select" onChange={e => setYear(e.target.value)}>{yearOptions.map(year => <option value={year}>{year} </option>)}</select>
                                     </div>
+                                }<br></br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;{showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
                                 }
-                                {showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
-                                }
-                                <button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Confirmar" : "Agregar"}</button>
+                               &nbsp;&nbsp;<button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Confirmar" : "+"}</button>
                             </section>
 
                         </div>
