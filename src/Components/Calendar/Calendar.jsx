@@ -156,9 +156,9 @@ export default function Calendar() {
                                         <select className="styled-select" onChange={e => setYear(e.target.value)}>{yearOptions.map(year => <option value={year}>{year} </option>)}</select>
                                     </div>
                                 }<br></br>
-                               &nbsp;&nbsp;&nbsp;&nbsp;{showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
                                 }
-                               &nbsp;&nbsp;<button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Confirmar" : "+"}</button>
+                               &nbsp;&nbsp;<button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Agregar" : "+"}</button>
                             </section>
 
                         </div>
