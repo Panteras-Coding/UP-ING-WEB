@@ -58,13 +58,16 @@
     background-color: rgb(224, 147, 3);
     color: #FFFFFF;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
-    padding: 7px 15px;
-    position: left;
+    padding: 5px 10px;
+   
     margin-left: 75%;
+
+ 
+    
   }
-  
+ 
   .calendar {
     font-size: 20px;
     color: #112F70;

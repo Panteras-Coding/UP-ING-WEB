@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Calendar.css"
-
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 export default function Calendar() {
     const [diasAsueto, setDiasAsueto] = useState([{
         "day": "01",
@@ -31,6 +32,7 @@ export default function Calendar() {
         setDay(dayOptions[0]+1)
         setShowForm(false);
     }
+  const [selectedDate, setSelectedDate]=useState(null);
 
     return (
         <div className="main-calendar">
@@ -47,15 +49,13 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>Inicio</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <div className="picker">
+                                    <DatePicker class="react-datepicker" selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    </div>
                                 </div>
                                 <div className="subsection">
                                     <p>Fin</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -66,15 +66,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -85,15 +81,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -104,15 +96,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -123,15 +111,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <select className="styled-select"><option>01</option></select>
-                                    <select className="styled-select"><option>01 </option></select>
-                                    <select className="styled-select"><option>2020</option></select>
+                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                 </div>
                             </section>
                             <section className="calendar-asueto">
@@ -141,9 +125,7 @@ export default function Calendar() {
                                 {diasAsueto.map(fecha => {
                                     return (
                                         <div>
-                                            <select className="styled-select"><option value={fecha.day}>{fecha.day}</option></select>
-                                            <select className="styled-select"><option value={fecha.month}>{fecha.month} </option></select>
-                                            <select className="styled-select"><option value={fecha.year}>{fecha.year}</option></select>
+                                             <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                         </div>
     
                                     )
@@ -151,14 +133,12 @@ export default function Calendar() {
                                 )}
                                 {showForm &&
                                     <div>
-                                        <select className="styled-select" onChange={e => setDay(e.target.value)}>{dayOptions.map(day => <option value={day + 1}>{day + 1}</option>)}</select>
-                                        <select className="styled-select" onChange={e => { if (year) { setMonth(e.target.value); setDayOptions(daysInMonth(month, year)); setDay(dayOptions[0]+1) } }}>{monthOptions.map((month, index) => <option value={index + 1}>{month} </option>)}</select>
-                                        <select className="styled-select" onChange={e => setYear(e.target.value)}>{yearOptions.map(year => <option value={year}>{year} </option>)}</select>
+                                         <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
                                     </div>
                                 }<br></br>
-                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
+                            {showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
                                 }
-                               &nbsp;&nbsp;<button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Agregar" : "+"}</button>
+                               <button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Agregar" : "+"}</button>
                             </section>
 
                         </div>
@@ -195,7 +175,7 @@ export default function Calendar() {
                             Curso de Verano</li>
                     </ul>
                 </div>
-                <button>Vista Previa</button>
+                <button>Subir Calendario</button>
             </div>
         </div>
     );
