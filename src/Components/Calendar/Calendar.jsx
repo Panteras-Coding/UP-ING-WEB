@@ -32,8 +32,11 @@ export default function Calendar() {
         setDay(dayOptions[0]+1)
         setShowForm(false);
     }
-  const [selectedDate, setSelectedDate]=useState(null);
-
+  const [selectedDate, setSelectedDate]=useState(new Date());
+  function change(selectedDate){
+    //your modification on passed value ....
+    setSelectedDate(selectedDate)
+  }
     return (
         <div className="main-calendar">
             <div className="calendar-box">
@@ -50,12 +53,12 @@ export default function Calendar() {
                                 <div className="subsection">
                                     <p>Inicio</p>
                                     <div className="picker">
-                                    <DatePicker class="react-datepicker" selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={change}/>
                                     </div>
                                 </div>
                                 <div className="subsection">
                                     <p>Fin</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -66,11 +69,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -81,11 +84,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -96,11 +99,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                             </section>
                             <section className="calendar-section">
@@ -111,11 +114,11 @@ export default function Calendar() {
                             <section className="calendar-section">
                                 <div className="subsection">
                                     <p>De</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                                 <div className="subsection">
                                     <p>A</p>
-                                    <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                 </div>
                             </section>
                             <section className="calendar-asueto">
@@ -125,7 +128,7 @@ export default function Calendar() {
                                 {diasAsueto.map(fecha => {
                                     return (
                                         <div>
-                                             <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                             <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                         </div>
     
                                     )
@@ -133,12 +136,12 @@ export default function Calendar() {
                                 )}
                                 {showForm &&
                                     <div>
-                                         <DatePicker selected={selectedDate} onChange={date=>setSelectedDate}/>
+                                         <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                     </div>
                                 }<br></br>
-                            {showForm && <button className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
+                            {showForm && <button id="containerbutton" className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
                                 }
-                               <button className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Agregar" : "+"}</button>
+                               <button id="containerbutton"className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Agregar" : "+"}</button>
                             </section>
 
                         </div>
