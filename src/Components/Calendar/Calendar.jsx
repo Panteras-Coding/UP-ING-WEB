@@ -27,16 +27,16 @@ export default function Calendar() {
     const [dayOptions, setDayOptions] = useState(daysInMonth(month, year));
     const [day, setDay] = useState(dayOptions[0]+1);
 
-    const agregarDiaAsueto = (day, month, year) => {
+    const agregarDiaAsueto = () => {
         setDiasAsueto([...diasAsueto, { "day": day, "month": monthOptions[month], "year": year }])
         setDay(dayOptions[0]+1)
         setShowForm(false);
     }
+    const quitarDiaAsueto = () => {
+        setShowForm(false);
+    }
   const [selectedDate, setSelectedDate]=useState(new Date());
-  function change(selectedDate){
-    //your modification on passed value ....
-    setSelectedDate(selectedDate)
-  }
+  
     return (
         <div className="main-calendar">
             <div className="calendar-box">
@@ -53,7 +53,7 @@ export default function Calendar() {
                                 <div className="subsection">
                                     <p>Inicio</p>
                                     <div className="picker">
-                                    <DatePicker id="d"  selected={selectedDate} onChange={change}/>
+                                    <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                     </div>
                                 </div>
                                 <div className="subsection">
@@ -139,9 +139,8 @@ export default function Calendar() {
                                          <DatePicker id="d"  selected={selectedDate} onChange={date=>setSelectedDate(date)}/>
                                     </div>
                                 }<br></br>
-                            {showForm && <button id="containerbutton" className="form-asueto" onClick={() => {setShowForm(false)}}>Cancelar</button>
-                                }
-                               <button id="containerbutton"className="form-asueto" onClick={() => { !showForm ? setShowForm(true) : agregarDiaAsueto(day, month, year) }}>{showForm ? "Agregar" : "+"}</button>
+                               <button id="containerbutton"className="form-asueto" onClick={() => { agregarDiaAsueto() }}>{ " - " }</button>
+                               <button id="containerbutton"className="form-asueto" onClick={() => { agregarDiaAsueto() }}>{ "+" }</button>
                             </section>
 
                         </div>
