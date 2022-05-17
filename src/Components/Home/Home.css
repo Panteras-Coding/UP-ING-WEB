@@ -4,6 +4,7 @@ body{}
    
     
   }
+  
 .carbon-example {
     margin-top:20px; margin-left: 150px;
   padding: 8px;
@@ -22,7 +23,11 @@ body{}
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
   margin-top:20px;
 }
-
+.novedades {
+  
+   margin-left: 10px;
+   padding-right: 1000px;
+  }
 .carbon-example img {
   margin-right: 9px;
   max-width: 125px;

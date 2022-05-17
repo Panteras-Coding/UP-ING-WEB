@@ -3,7 +3,7 @@ import "./Home.css"
 export default function Home() {
     return(
         <div>
-
+<h1 class="novedades" >Novedades</h1>
 <div class="container">
     <section className="cards-section">
     <div class="row">
