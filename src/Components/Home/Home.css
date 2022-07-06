@@ -1,12 +1,10 @@
-body{}
+
 .cards-section {
     display: inline-flex;
-   
-    
-  }
+}
   
 .carbon-example {
-    margin-top:20px; margin-left: 150px;
+  margin-top:20px; margin-left: 150px;
   padding: 8px;
   background-color: #fff;
   width: 295px;
@@ -25,9 +23,10 @@ body{}
 }
 .novedades {
   
-   margin-left: 10px;
-   padding-right: 1000px;
-  }
+  margin-left: 10px;
+  padding-right: 1000px;
+}
+
 .carbon-example img {
   margin-right: 9px;
   max-width: 125px;
